@@ -20,7 +20,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <docker.image.registry>10.124.206.91:5000</docker.image.registry>
         <server.dev>10.124.206.91</server.dev>
-        <server.docker.port>8088</server.docker.port>
+        <server.port>8088</server.port>
     </properties>
 
     <dependencies>
