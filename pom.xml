@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.tcl.springboot</groupId>
     <artifactId>springboot-demo1</artifactId>
-    <version>0.0.16-SNAPSHOT</version>
+    <version>0.0.17-SNAPSHOT</version>
     <name>springboot-demo1</name>
     <description>Demo project for Spring Boot</description>
 
