@@ -19,6 +19,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <docker.image.registry>10.124.206.91:5000</docker.image.registry>
+        <server.dev>10.124.206.91</server.dev>
+        <server.docker.port>8088</server.docker.port>
     </properties>
 
     <dependencies>
@@ -82,7 +84,7 @@
                     </execution>
                     <execution>
                         <id>push-image</id>
-                        <phase>deploy</phase>
+                        <phase>package</phase>
                         <goals>
                             <goal>push</goal>
                         </goals>
@@ -100,7 +102,7 @@
                 <executions>
                     <execution>
                         <id>uncompress</id>
-                        <phase>deploy</phase>
+                        <phase>package</phase>
                         <goals>
                             <goal>exec</goal>
                         </goals>
@@ -109,6 +111,8 @@
                             <arguments>
                                 <argument>${docker.image.registry}/${project.artifactId}:${project.version}</argument>
                                 <argument>${project.artifactId}</argument>
+                                <argument>#{server.port}</argument>
+                                <argument>${server.dev}</argument>
                             </arguments>
                         </configuration>
                     </execution>
@@ -116,6 +120,4 @@
             </plugin>
         </plugins>
     </build>
-
-    
 </project>
