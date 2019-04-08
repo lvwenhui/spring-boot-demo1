@@ -5,10 +5,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
-    @RequestMapping("/hello")
+    @RequestMapping("")
      public String hello()
      {
-         return "hello world ++++++++++= version 17";
+         return "hello world ++++++++++= version 18";
      }
 }
 
