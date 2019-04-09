@@ -2,3 +2,8 @@ spring:
   profiles:
     active: dev
 
+env: DEV
+app:
+  id: docker_test
+apollo:
+  meta: http://10.124.206.84:9980/
