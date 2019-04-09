@@ -14,6 +14,6 @@ public class HelloController {
 
     @RequestMapping("")
     public String hello() {
-        return "返回Apollo配置 用户名 ：" + configDemo.getUsername() + "  密码: " + configDemo.getPassword();
+        return "返回Apollo配置 用户名 ：" + configDemo.getUsername() + "  密码: " + configDemo.getPassword()+"";
     }
 }
