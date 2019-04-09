@@ -8,7 +8,7 @@ public class HelloController {
     @RequestMapping("")
      public String hello()
      {
-         return "hello world ++++++++++= version 20";
+         return "hello world";
      }
 }
 
