@@ -11,6 +11,7 @@ import com.ctrip.framework.apollo.spring.annotation.EnableApolloConfig;
  * @author ThinkTik
  */
 
+
 @Component
 @EnableApolloConfig(value = "config_demo")
 public class ConfigDemo {
